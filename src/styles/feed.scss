@@ -1,0 +1,127 @@
+.feedSection {
+  padding: 12px;
+
+  background-color: aliceblue;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  h3 {
+    font-size: 32px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .feedBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 0 32px;
+    width: 65%;
+    .individualBlock {
+      display: flex;
+      gap: 32px;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      .leftSection {
+        img {
+          width: 220px;
+          height: 220px;
+          border-radius: 26px;
+        }
+      }
+      .rightSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          font-size: 24px;
+          font-family: "Courier New", Courier, monospace;
+          font-weight: 600;
+          text-align: initial;
+          margin-block-start: unset;
+          margin-block-end: unset;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          font-family: "Courier New", Courier, monospace;
+          margin-block-start: unset;
+          margin-block-end: unset;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.modal-overlay {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  .modal-box {
+    background: white;
+    width: 70%;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .individualBlock {
+      display: flex;
+      gap: 32px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      .leftSection {
+        img {
+          width: 220px;
+          height: 220px;
+          border-radius: 26px;
+        }
+      }
+      .rightSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          font-size: 24px;
+          font-family: "Courier New", Courier, monospace;
+          font-weight: 600;
+          text-align: initial;
+          margin-block-start: unset;
+          margin-block-end: unset;
+          margin-bottom: 20px;
+          color: #3b427f;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+          span {
+            font-weight: 700;
+            color: #21243d;
+          }
+        }
+        p {
+          font-size: 18px;
+          font-family: "Courier New", Courier, monospace;
+          margin-block-start: unset;
+          margin-block-end: unset;
+          text-align: left;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
